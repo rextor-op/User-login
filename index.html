@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-screen flex items-center justify-center bg-black text-white">
+
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-sm text-center">
+        <h1 class="text-2xl font-bold">BABY AI S1</h1>
+        <img src="dp.jpg" alt="Logo" class="mx-auto w-24 h-24 rounded-full border-4 border-gray-600 my-4" />
+        
+        <form id="login-form">
+            <input type="text" id="key-input" placeholder="Enter Key" required 
+                class="w-full p-3 rounded bg-gray-700 text-white mb-4">
+            <input type="hidden" id="deviceIdInput">
+            <button type="submit" class="w-full bg-blue-500 py-2 rounded hover:bg-blue-600">
+                Login
+            </button>
+        </form>
+
+        <button onclick="copyDeviceId()" id="copyButton" class="mt-4 text-white bg-green-600 py-2 px-4 rounded">
+            Copy Device ID
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
